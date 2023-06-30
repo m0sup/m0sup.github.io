@@ -1,16 +1,36 @@
 body {
   background-image: url("paper.jpg");
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 h1 {
   text-align: center;
   color: green;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-style: solid;
 }
 
 h2 {
   border-style: dashed;
   border-width: 5px 20px;
-  color: green
+  color: red
+}
+
+h3 {
+  color: blue;
+  border-width: 5px 20px;
+  border-style: dashed
+
 }
 
 .center {
@@ -18,4 +38,10 @@ h2 {
   margin-left: auto;
   margin-right: auto;
   width: 35%;
+}
+
+#penguin {
+  width: 46px;
+  height: 44px;
+  background: url(linuxpenguin.jpg) 0 0;
 }
